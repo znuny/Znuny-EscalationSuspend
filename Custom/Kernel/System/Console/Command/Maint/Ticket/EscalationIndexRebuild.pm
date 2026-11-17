@@ -13,7 +13,6 @@ package Kernel::System::Console::Command::Maint::Ticket::EscalationIndexRebuild;
 
 use strict;
 use warnings;
-use utf8;
 
 use Time::HiRes();
 

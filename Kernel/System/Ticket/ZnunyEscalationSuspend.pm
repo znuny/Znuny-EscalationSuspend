@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2012 Znuny GmbH, https://znuny.com/
 # --
-# $origin: Znuny - 544b3987e19c335278acc47494e7fc501bb88d51 - Kernel/System/Ticket.pm
+# $origin: Znuny - ae64494471a43621859836cff8d2f6fa3babc09a - Kernel/System/Ticket.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1023,8 +1023,8 @@ our $ObjectManagerDisabled = 1;
                 SELECT MAX(create_time)
                 FROM ticket_history
                 WHERE ticket_id = ?
-                   AND state_id IN (${\(join ', ', sort @List)})
-                   AND history_type_id IN  (${\(join ', ', sort @HistoryTypeIDs)})
+                AND state_id IN (${\(join ', ', sort @List)})
+                AND history_type_id IN  (${\(join ', ', sort @HistoryTypeIDs)})
                 ",
             Bind => [ \$Param{TicketID} ],
         );
