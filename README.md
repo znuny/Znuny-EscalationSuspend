@@ -15,7 +15,7 @@ This add-on suspends the escalation when the ticket is in any of the configured 
 
 **Prerequisites**
 
-- Znuny 7.3
+- Znuny 7.5
 
 **Installation**
 
